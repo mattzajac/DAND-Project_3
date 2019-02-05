@@ -280,7 +280,8 @@
     
 
     
-    \subsection{Data Wrangling Report}\label{data-wrangling-report}
+    \hypertarget{data-wrangling-report}{%
+\subsection{Data Wrangling Report}\label{data-wrangling-report}}
 
 {Mateusz Zajac} {Feb-2019}
 
@@ -294,7 +295,7 @@
   Section \ref{clean}
 \end{itemize}
 
-     \#\#\# Part I - Gathering Data For this project I used data from three
+    \#\#\# Part I - Gathering Data For this project I used data from three
 sources: 1. The WeRateDogs Twitter archive, which download manually
 from:
 \href{https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59a4e958_twitter-archive-enhanced/twitter-archive-enhanced.csv}{twitter\_archive\_enhanced.csv}
@@ -305,7 +306,7 @@ using the Requests library 3. The tweet\_json.txt, which is a downloaded
 JSON data (using Python's Tweepy library) from Twitter API for each
 tweet from the Twitter archive file
 
-     \#\#\# Part II - Assessing Data
+    \#\#\# Part II - Assessing Data
 
 At this stage I assessed data visually and programmatically, using
 pandas .sample(10), .info(), .describe(), .value\_counts() or
@@ -319,11 +320,11 @@ in\_reply\_to\_status\_id, in\_reply\_to\_user\_id,
 retweeted\_status\_id, retweeted\_status\_user\_id should be intergs
 instead of float (check if fields are essential for the analysis) 3.
 timestamp and retweeted\_status\_timestamp should be datetime instead of
-object (string) 4. incorrect dog names (for instance: 'such', 'a', 'an')
+object (string) 4. incorrect dog names (for instance: `such', `a', `an')
 5. the rating numerator and denominator have ratings above the standard
 scale (for instance numerator equal to 1776 and denominator equal to
 170) 6. urls appear in the source column 7. source and dog stage
-datatype can be set to 'category'
+datatype can be set to `category'
 
 \textbf{Twitter Images} 1. Missing records: 2075 rows instead of 2356 2.
 66 tweet\_ids have the same duplicated jpg\_urls 3. Natural network
@@ -351,20 +352,21 @@ dataset completely would require a lot of time, and is not necessary to
 practice and demonstrate your skills in data wrangling. I tried to be
 reasonable.
 
-     \#\#\# Part III - Cleaning Data
+    \#\#\# Part III - Cleaning Data
 
 I created copies of original dataframes and I tried to clean all of them
 separately, one after another. At the end, I inner joined the three
-datasets on the common key ('tweet\_id') and polished a bit the joined
+datasets on the common key (`tweet\_id') and polished a bit the joined
 dataframe. The dataframe was saved as a separate file
-"twitter\_archive\_master.csv".
+``twitter\_archive\_master.csv''.
 
 That was a challanging task that took me some time. There were some
 parts I was struggling with and needed to do an online research (which I
 always find as a part of learning curve). I am sure there were moments
 where I could have done better job with cleaning (or make the cleaning
 more automated, reusable with new data) or the code itself could have
-been cleaner, written smarter.
+been cleaner, written smarter. Anyway, I am glad I went through the
+project and I feel I learned quite a lot.
 
 
     % Add a bibliography block to the postdoc
