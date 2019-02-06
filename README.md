@@ -33,9 +33,9 @@ Store the clean DataFrame(s) in a CSV file with the main one named twitter_archi
 Analyze and visualize your wrangled data in your wrangle_act.ipynb Jupyter Notebook. __At least three (3) insights__ and __one (1) visualization__ must be produced.
 
 #### Reporting
-Create a __300-600 word written report__ called wrangle_report.pdf or wrangle_report.html that briefly describes your wrangling efforts. This is to be framed as an internal document.
+Create a __300-600 word written report__ called `wrangle_report.pdf` or `wrangle_report.html` that briefly describes your wrangling efforts. This is to be framed as an internal document.
 
-Create a __250-word-minimum written report__ called act_report.pdf or act_report.html that communicates the insights and displays the visualization(s) produced from your wrangled data. This is to be framed as an external document, like a blog post or magazine article, for example.
+Create a __250-word-minimum written report__ called `act_report.pdf` or `act_report.html` that communicates the insights and displays the visualization(s) produced from your wrangled data. This is to be framed as an external document, like a blog post or magazine article, for example.
 
 ## Author
 This project was completed by Mateusz Zajac.
